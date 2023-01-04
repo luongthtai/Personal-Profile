@@ -1,0 +1,26 @@
+#button {
+    cursor: pointer;
+
+    width: 140px;
+    min-height: 42px;
+    // padding: 15px 24px;
+
+    font-weight: 700;
+
+    background-color: var(--greenColor);
+    color: var(--white);
+
+    outline: none;
+    border: none;
+
+    box-shadow: 4px 4px 0px var(--white);
+
+    transition: 0.2s;
+
+    &:hover {
+        background-color: var(--white);
+        color: var(--greenColor);
+
+        box-shadow: 3px 3px 0px var(--greenColor);
+    }
+}

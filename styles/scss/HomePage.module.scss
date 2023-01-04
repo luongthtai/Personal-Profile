@@ -1,0 +1,14 @@
+.root {
+    width: 100%;
+
+    main {
+        width: calc(100% - 250px);
+        height: auto;
+
+        float: right;
+
+        background-color: var(--webColor);
+
+        padding: 0 8%;
+    }
+}

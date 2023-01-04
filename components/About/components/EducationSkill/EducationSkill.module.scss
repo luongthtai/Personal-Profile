@@ -1,0 +1,35 @@
+.educationSkill {
+    color: var(--white);
+    padding: 8% 5%;
+
+    border-bottom: 1px solid var(--textColor);
+
+    #container {
+        display: flex;
+        gap: 30px;
+
+        #education {
+            width: 40%;
+
+            padding-right: 8%;
+
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr;
+            gap: 3px;
+        }
+
+        #skill {
+            width: 60%;
+
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+
+            #skillItems {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+}

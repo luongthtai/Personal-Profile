@@ -1,0 +1,28 @@
+#root {
+    background-color: var(--divColor);
+    padding: 70px 20px 20px;
+
+    position: relative;
+
+    #times {
+        width: fit-content;
+        padding: 2px 10px;
+
+        background-color: var(--greenColor);
+        
+        position: absolute;
+        left: -5px;
+        top: 25px;
+
+        p {
+            color: var(--white);
+            font-size: 12px;
+        }
+    }
+
+    #content {
+        p {
+            margin-top: 8px;
+        }
+    }
+}

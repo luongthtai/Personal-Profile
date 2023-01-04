@@ -1,0 +1,32 @@
+#title {
+    margin-bottom: 40px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 12%;
+        height: 1px;
+        background-color: var(--greenColor);
+
+        display: block;
+
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: var(--greenColor);
+
+        display: block;
+
+        border-radius: 100%;
+
+        position: absolute;
+        bottom: -12px;
+        left: 12%;
+    }
+}

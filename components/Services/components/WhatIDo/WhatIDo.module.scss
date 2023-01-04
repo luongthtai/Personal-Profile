@@ -1,0 +1,11 @@
+#iDo {
+    padding: 5% 0 8%;
+
+    border-bottom: 1px solid var(--textColor);
+
+    #lists {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        gap: 25px;
+    }
+}

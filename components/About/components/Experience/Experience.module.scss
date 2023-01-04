@@ -1,0 +1,9 @@
+#experience {
+    padding: 5% 0;
+
+    #experienceItems {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
