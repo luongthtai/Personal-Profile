@@ -8,6 +8,14 @@
         display: flex;
         gap: 30px;
 
+        @media only screen and (max-width: 1200px) {
+            gap: 25px;
+        }
+
+        @media only screen and (max-width: 990px) {
+            flex-direction: column;
+        }
+
         #education {
             width: 40%;
 
@@ -16,6 +24,18 @@
             display: grid;
             grid-template: 1fr 1fr 1fr / 1fr;
             gap: 3px;
+
+            @media only screen and (max-width: 1200px) {
+                padding-right: 6%;
+            }
+
+            @media only screen and (max-width: 990px) {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 990px) {
+                padding-right: 0;
+            }
         }
 
         #skill {
@@ -24,6 +44,15 @@
             display: flex;
             justify-content: space-around;
             flex-direction: column;
+
+            @media only screen and (max-width: 990px) {
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 990px) {
+                gap: 25px;
+                margin-top: 30px;
+            }
 
             #skillItems {
                 display: flex;

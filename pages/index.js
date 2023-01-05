@@ -2,7 +2,7 @@ import Head from 'next/head'
 import NavBar from '../components/NavBar/NavBar'
 import css from '../styles/scss/HomePage.module.scss'
 import pages from "../constants/pages"
-import { useEffect } from 'react'
+import NavBarSmall from '../components/NavBarSmall/NavBarSmall'
 
 export default function Home() {
   return (
@@ -14,17 +14,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={css.root}>
+      <header id={css.header}>
         <NavBar />
-        <main>
-          {pages.HeroHeader}
-          {pages.About}
-          {pages.Services}
-          {pages.Portfolid}
-          {pages.Blog}
-          {pages.Constact}
-        </main>
       </header>
+      <NavBarSmall />
+
+      <main id={css.main}>
+        {pages.HeroHeader}
+        {pages.About}
+        {pages.Services}
+        {pages.Portfolid}
+        {pages.Blog}
+        {pages.Constact}
+      </main>
     </>
   )
 }

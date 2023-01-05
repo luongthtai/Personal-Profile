@@ -19,6 +19,7 @@
     "react-slick": "^0.29.0",
     "sass": "^1.57.1",
     "scss": "^0.2.4",
+    "sharp": "^0.31.3",
     "slick-carousel": "^1.8.1"
   }
 }

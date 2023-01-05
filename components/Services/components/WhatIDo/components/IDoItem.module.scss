@@ -8,6 +8,10 @@
     align-items: flex-start;
     gap: 20px;
 
+    @media only screen and (max-width: 1200px) {
+        gap: 30px;       
+    }
+
     &:hover {
         background-color: var(--greenColor);
 

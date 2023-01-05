@@ -1,5 +1,26 @@
 .blog {
     color: var(--white);
 
-    height: 100vh;
+    padding: 8% 0%;
+
+    @media only screen and (max-width: 1200px) {
+        padding-bottom: 25%;       
+    }
+
+    #contents {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 110px 30px;
+
+        padding: 25px 0 120px;
+
+        @media only screen and (max-width: 768px) {
+            grid-template: 1fr 1fr 1fr 1fr / auto;   
+        }
+    }
+
+    #button {
+        width: 100%;
+        text-align: center;
+    }
 }

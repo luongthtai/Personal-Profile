@@ -1,14 +1,46 @@
-.root {
-    width: 100%;
+#header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
 
-    main {
-        width: calc(100% - 250px);
-        height: auto;
+    overflow: auto;
 
-        float: right;
+    width: 250px;
+    height: 100vh;
 
-        background-color: var(--webColor);
+    float: left;
 
-        padding: 0 8%;
+    @media only screen and (max-width: 1440px) {
+        height: 100vh;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        transform: translateX(-100%);
+    }
+}
+
+#main {
+    width: calc(100% - 250px);
+    height: 100%;
+
+    float: right;
+    overflow: hidden;
+
+    background-color: var(--webColor);
+
+    padding: 0% 8%;
+
+    @media only screen and (max-width: 1440px) {
+        padding: 0 2%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 5%;
     }
 }

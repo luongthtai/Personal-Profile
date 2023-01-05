@@ -23,6 +23,8 @@ body {
     font-family: 'Poppins', sans-serif;
 
     color: var(--white);
+
+    position: relative;
 }
 
 h1 {
@@ -35,6 +37,10 @@ h2 {
     font-weight: 300;
     letter-spacing: 6px;
     color: var(--white);
+    
+    @media only screen and (max-width: 768px) {
+        font-size: 25px;
+    }
 }
 
 p {

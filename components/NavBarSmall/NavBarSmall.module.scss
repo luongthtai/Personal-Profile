@@ -1,0 +1,40 @@
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background-color: var(--webColor);
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    #menu {
+        color: var(--white);
+        background-color: var(--greenColor);
+
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+}

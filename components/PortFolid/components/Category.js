@@ -5,7 +5,7 @@ export default function Category() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch("https://personal-profile-six.vercel.app/api/portfolio").then((res) => res.JSON).then(datas => setData(datas))
+        
     }, [])
 
     return (

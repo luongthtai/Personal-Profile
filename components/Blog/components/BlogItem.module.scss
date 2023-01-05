@@ -1,0 +1,77 @@
+#container {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    // overflow: hidden;
+
+    #image {
+        overflow: hidden;
+
+        cursor: pointer;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+            filter: grayscale(100%);
+        }
+
+        #content {
+            h3 {
+                &::after {
+                    width: 100%;
+                    height: 2px;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+
+        transition: 0.4s;
+    }
+
+    #content {
+        cursor: pointer;
+
+        background-color: var(--divColor);
+        width: 90%;
+        padding: 5%;
+
+        position: absolute;
+        right: 0;
+        bottom: 0%;
+
+        transform: translateY(50%);
+
+        p {
+            font-size: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+
+            position: relative;
+
+            &::after {
+                content: "";
+
+                width: 0;
+                height: 1px;
+                background-color: var(--white);
+
+                transition: 0.4s;
+
+                display: block;
+
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+            }
+        }
+    }
+}

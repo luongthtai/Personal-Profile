@@ -1,13 +1,6 @@
 .root {
     background-color: var(--navColor);
 
-    overflow: hidden;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,7 +8,7 @@
     gap: 80px;
     
     width: 250px;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
 
     #user {
@@ -95,6 +88,32 @@
 
             &:focus {
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+#contact {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    a {
+        color: var(--white);
+
+        font-size: 18px;
+
+        &:hover {
+            svg {
+                color: var(--greenColor);
+                transition: .1s;
             }
         }
     }

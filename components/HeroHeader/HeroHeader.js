@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import css from "./HeroHeader.module.scss"
-import avatar from "../../public/images/avatar.jpg"
+import avatar from "../../public/images/client1.jpg"
 import Image from 'next/image'
 import {BsFillMoonFill} from "react-icons/bs"
 import PrimaryButton from '../button/PrimaryButton'

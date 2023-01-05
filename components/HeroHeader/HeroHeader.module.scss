@@ -10,6 +10,13 @@
 
     position: relative;
 
+    @media only screen and (max-width: 990px) {
+        flex-direction: column;
+        height: auto;
+
+        padding: 20% 0 10% 0;
+    }
+
     &:after {
         content: "";
         width: 70%;
@@ -23,14 +30,30 @@
         z-index: 0;
 
         border-radius: 100%;
+
+        @media only screen and (max-width: 1200px) {
+            width: 90%;
+        }
+
+        @media only screen and (max-width: 990px) {
+            width: 100%;
+            min-height: 70%;
+        }
     }
 
     #heroHeaderContent {
-        padding: 5%;
-
         display: flex;
         flex-direction: column;
         gap: 30px;
+        z-index: 1;
+
+        @media only screen and (max-width: 1200px) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 990px) {
+            width: 100%;
+        }
 
         #heroText {
             h1 {
@@ -58,12 +81,32 @@
         justify-content: center;
         align-items: center;
 
+        @media only screen and (max-width: 1440px) {
+            overflow: inherit;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 990px) {
+            width: 80%;
+        }
+
         img {
-            width: 600px;
-            height: 600px;
-            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
 
             z-index: 2;
+
+            @media only screen and (max-width: 1200px) {
+                transform: translateX(15%);
+            }
+
+            @media only screen and (max-width: 990px) {
+                transform: translateX(0);
+            }
         }
     }
 
@@ -88,5 +131,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 1200px) {
+            right: 10px;
+            top: 60px;
+        }
     }
 }
