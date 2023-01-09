@@ -3,8 +3,39 @@ import NavBar from '../components/NavBar/NavBar'
 import css from '../styles/scss/HomePage.module.scss'
 import pages from "../constants/pages"
 import NavBarSmall from '../components/NavBarSmall/NavBarSmall'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
+  const [mount, setMount] = useState({
+    x: 0,
+    y: 0
+  })
+
+  const handleMount = (e) => {
+
+    if (e.clientX > 10 && e.clientY > 10) {
+      setMount({
+        x: e.clientX,
+        y: e.clientY
+      })
+    }
+    else {
+      setMount({
+        x: -100,
+        y: -100
+      })
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMount)
+  }, [])
+
+
+  const style = {
+    transform: `translate(${mount.x + "px"}, ${mount.y + "px"})`
+  }
+
   return (
     <>
       <Head>
@@ -27,6 +58,8 @@ export default function Home() {
         {pages.Blog}
         {pages.Constact}
       </main>
+
+      <div className={css.mouseEffect} style={style} id="mouse"></div>
     </>
   )
 }

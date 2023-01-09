@@ -6,6 +6,7 @@ import { AiFillBook, AiFillIdcard, AiFillHome, AiOutlineTwitter, AiOutlineInstag
 import { GoSettings } from "react-icons/go"
 import { SlNotebook } from "react-icons/sl"
 import { FaFacebookF, FaTiktok } from "react-icons/fa"
+import Link from "next/link";
 
 export default function NavBar() {
     const [section, setSection] = useState(1)
@@ -46,21 +47,21 @@ export default function NavBar() {
                 </div>
 
                 <nav id={css.navbar}>
-                    <a href="#heroSection" style={section === 1 ? styles : {}} ><AiFillHome />HOME</a>
+                    <Link href="#heroSection" style={section === 1 ? styles : {}} ><AiFillHome />HOME</Link>
 
-                    <a href="#about" style={section === 2 ? styles : {}} ><AiFillIdcard />ABOUT</a>
+                    <Link href="#about" style={section === 2 ? styles : {}} ><AiFillIdcard />ABOUT</Link>
 
-                    <a href="#services" style={section === 3 ? styles : {}}
-                    ><GoSettings />SERVICES</a>
+                    <Link href="#services" style={section === 3 ? styles : {}}
+                    ><GoSettings />SERVICES</Link>
 
-                    <a href="#portfolid" style={section === 4 ? styles : {}}
-                    ><AiFillBook />PORTFOLID</a>
+                    <Link href="#portfolid" style={section === 4 ? styles : {}}
+                    ><AiFillBook />PORTFOLID</Link>
 
-                    <a href="#blog" style={section === 5 ? styles : {}}
-                    ><SlNotebook />BLOG</a>
+                    <Link href="#blog" style={section === 5 ? styles : {}}
+                    ><SlNotebook />BLOG</Link>
 
-                    <a href="#contact" style={section === 6 ? styles : {}}
-                    >CONTACT ME</a>
+                    <Link href="#contact" style={section === 6 ? styles : {}}
+                    >CONTACT ME</Link>
                 </nav>
             </div>
 

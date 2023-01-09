@@ -7,6 +7,10 @@
     font-size: 12px;
     letter-spacing: 2px;
 
+    @media only screen and (max-width: 1024px) {
+        justify-content: center;
+    }
+
     li {
         cursor: pointer;
 
@@ -40,6 +44,15 @@
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;
     gap: 30px;
+
+    @media only screen and (max-width: 768px) {
+        grid-template: auto / 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 500px) {
+        grid-template: auto / 1fr;
+
+    }
 
     img {
         width: 100%;

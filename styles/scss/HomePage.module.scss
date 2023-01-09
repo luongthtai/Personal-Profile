@@ -44,3 +44,32 @@
         padding: 5%;
     }
 }
+
+.mouseEffect {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+
+    z-index: 20;
+    transition: 0s;
+
+    pointer-events: none;
+    mix-blend-mode: difference;
+
+    &::before {
+        content: "";
+        position: fixed;
+
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        background-color: var(--greenColor);
+
+        z-index: 21;
+    }
+}

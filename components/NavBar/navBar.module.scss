@@ -73,6 +73,11 @@
             align-items: center;
             gap: 5px;
 
+            &:hover {
+                color: var(--greenColor) !important;
+                font-weight: 700;
+            }
+
             svg {
                 font-size: 18px;
             }
